@@ -1,0 +1,1179 @@
+@import './setting/utils';
+
+body {
+  @include Desktop {
+    #T_wrap, #M_Wrap {display: none;}
+    #Wrap {
+      position: relative;
+      width: 100%;
+      height: 100%;
+
+      @keyframes blink-effect {
+        50% {opacity: 0;}
+      }
+
+      .mainSwiper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 50rem;
+        box-shadow: 1.3rem 1.3rem 2rem $Works;
+        background: {
+          image: url('../img/MainBg.png');
+          repeat: repeat;
+        }
+
+        .swiper-wrapper {
+          .swiper-slide {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+
+            .pageLeft {
+              width: 50%;
+              height: 100%;
+              padding: 3rem;
+              border-right: 0.1rem dashed #000;
+            }
+
+            .pageRight {
+              position: relative;
+              width: 50%;
+              height: 100%;
+            }
+
+            h1 {
+              display: inline-block;
+              height: 3rem;
+              font-size: 2.5rem;
+              line-height: 3rem;
+              text-align: center;
+            }
+
+            &#Main {
+              .mainLeft {
+                padding: 1rem;
+                
+                .outFrame {
+                  position: relative;
+                  width: 80%;
+                  height: 90%;
+                  border: 0.4rem solid $mainGreen;
+                  margin: 2.5rem auto;
+
+                  .inFrame {
+                    width: 90%;
+                    height: 91%;
+                    border: 0.4rem solid $mainGreen;
+                    margin: 2rem auto;
+
+                    h2 {
+                      text-align: center;
+                      font-size: 3rem;
+                      font-weight: bold;
+                      line-height: 3rem;
+                      margin-top: 2rem;
+                    }
+
+                    h1 {
+                      display: block;
+                      text-align: center;
+                      color: $mainGreen;
+                      font-size: 3.5rem;
+                      font-weight: bold;
+                    }
+                  }
+
+                  .mainTitleSticker {
+                    position: absolute;
+                    display: inline-block;
+                  }
+                  .mainTitleSticker1 {
+                    bottom: 0%;
+                    right: 0%;
+                    width: 15rem;
+                    height: 27rem;
+                    background: {
+                      image: url('../img/sticker/MainTitleSticker1.png');
+                      repeat: no-repeat;
+                      size: 100%;
+                    }
+                    z-index: 1;
+                  }
+                  .mainTitleSticker2 {
+                    bottom: 0%;
+                    left: 0%;
+                    width: 15rem;
+                    height: 34.5rem;
+                    background: {
+                      image: url('../img/sticker/MainTitleSticker2.png');
+                      repeat: no-repeat;
+                      size: 100%;
+                    }
+                    transform: rotate(-20deg);
+                    z-index: 3;
+                  }
+                  .mainTitleSticker3 {
+                    top: 30%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 13rem;
+                    height: 13rem;
+                    background: {
+                      image: url('../img/sticker/MainTitleSticker3.png');
+                      repeat: no-repeat;
+                      size: 100%;
+                    }
+                    z-index: 2;
+                  }
+                  .mainTitleSticker4 {
+                    bottom: 0%;
+                    right: 0%;
+                    width: 20rem;
+                    height: 10.5rem;
+                    background: {
+                      image: url('../img/sticker/MainTitleSticker4.png');
+                      repeat: no-repeat;
+                      size: 100%;
+                    }
+                  }
+                }
+              }
+
+              .mainRight {
+                position: relative;
+                width: 50%;
+                height: 100%;
+
+                .rightTop {
+                  position: relative;
+                  .pageTag {a {background-image: url('../img/sticker/ListPageTag1.png');}}
+                }
+
+                .mainRightContent {
+                  display: inline-block;
+                  position: absolute;
+                  width: 70%;
+                  bottom: 8%;
+                  right: 0%;
+  
+                  .pageInfo {
+                    position: absolute;
+                    top: -50%;
+                    right: 0%;
+                    width: 100%;
+                    height: 70%;
+                    word-break: keep-all;
+                    word-wrap: normal;
+
+                    .scrollInfo {
+                      position: relative;
+                      height: 40%;
+
+                      .scrollImg {
+                        position: absolute;
+                        top: 10%;
+                        right: 25%;
+                        width: 6rem;
+                        height: 2.3rem;
+                        background: {
+                          image: url('../img/sticker/right_arrow.png');
+                          repeat: no-repeat;
+                          size: 100%;
+                          position: center;
+                        }
+                        animation: blink-effect 1.5s infinite;
+                        transform: rotate(-20deg);
+                      }
+
+                      p {
+                        position: absolute;
+                        bottom: 0%;
+                        right: 10%;
+                      }
+                    }
+
+                    .listInfo {
+                      position: relative;
+                      height: 60%;
+
+                      p {
+                        position: absolute;
+                        top: 0%;
+                        right: 10%;
+                      }
+
+                      .listImg {
+                        position: absolute;
+                        top: 25%;
+                        right: 10%;
+                        width: 1.5rem;
+                        height: 5rem;
+                        background: {
+                          image: url('../img/sticker/down_arrow.png');
+                          repeat: no-repeat;
+                          size: 100%;
+                          position: center;
+                        }
+                        animation: blink-effect 1.5s infinite;
+                        transform: rotate(2deg);
+                      }
+                    }
+                  }
+
+                  .rightList {
+
+                    > p {
+                      font-size: 2.5rem;
+                      font-weight: bold;
+                      color: $mainGreen;
+                      border-bottom: 0.2rem solid $mainGreen;
+                      text-align: left;
+                    }
+
+                    ul {
+                      width: 100%;
+
+                      li {
+                        margin: 1.5rem 0;
+  
+                        a {
+                          display: flex;
+                          flex-wrap: nowrap;
+                          justify-content: space-between;
+                          align-items: center;
+  
+                          div {
+                            display: inline-block;
+                            width: 2rem;
+                            height: 2rem;
+                            background: {
+                              repeat: no-repeat;
+                              size: 100%;
+                            }
+                            &.ListPage1 {background-image: url('../img/sticker/Listpage1.png');}
+                            &.ListPage2 {background-image: url('../img/sticker/Listpage2.png');}
+                            &.ListPage3 {background-image: url('../img/sticker/Listpage3.png');}
+                          }
+  
+                          p {
+                            width: 25%;
+                            font-size: 1.5rem;
+                            text-align: left;
+
+                            &:last-child {width: 15%;}
+                          }
+                        }
+  
+                        &.introduce {
+                          margin-top: 1rem;
+                          p {color: $Introduce;}
+                        }
+                        &.skills {p {color: $Skills;}}
+                        &.works {p {color: $Works;}}
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            &#Introduce {
+              .introLeft {
+                h1 {
+                  width: 25rem;
+                  color: #fff;
+                  background-color: $Introduce;
+                }
+
+                .introTitle {
+                  margin: 2rem 0 1.5rem;
+                  > p {
+                    text-align: center;
+
+                    &.enTitle {
+                      font-size: 2rem;
+                      font-weight: bold;
+                      line-height: 2rem;
+                    }
+
+                    &.koTitle {
+                      font-size: 1.5rem;
+                      margin-top: 0.5rem;
+                    }
+                  }
+                }
+
+                .myData {
+                  width: 80%;
+                  display: flex;
+                  flex-wrap: nowrap;
+                  justify-content: space-between;
+                  align-items: center;
+                  margin: 3rem auto;
+
+                  > .left {
+                    width: 10rem;
+                    height: 10rem;
+                    background-color: $Introduce;
+                    border-radius: 50%;
+                  }
+
+                  > .right {
+                    .profile {
+                      text-align: right;
+                      font-size: 1.5rem;
+                      font-weight: bold;
+                      margin-bottom: 0.6rem;
+                    }
+
+                    .data {
+                      text-align: right;
+                      font-size: 1.2rem;
+                      line-height: 2rem;
+                    }
+                  }
+                }
+
+                .intro {
+                  text-align: center;
+                  p {font-size: 1.3rem;}
+                }
+              }
+
+              .introRight {
+                .rightTop {
+                  position: relative;
+
+                  h1 {
+                    width: 10rem;
+                    font-weight: lighter;
+                    line-height: 3rem;
+                    color: #fff;
+                    background-color: $Introduce;
+                    margin: 3.5rem 0 0 2.5rem;
+                  }
+
+                  .pageTag {a {background-image: url('../img/sticker/ListPageTag2.png');}}
+                }
+
+                .period {
+                  display: inline-block;
+                  padding: 0 0.5rem;
+                  font-weight: bold;
+                  vertical-align: middle;
+                  background-color: $Highlight;
+                }
+
+                .rightList {
+                  ul {
+                    margin-left: 1.5rem;
+
+                    li {
+                      margin: 1rem 0;
+                      &:first-child {margin-top: 1.5rem;}
+
+                      p {
+                        font-size: 1rem;
+                        margin-left: 1rem;
+                      }
+                    }
+                  }
+                }
+
+                .license {
+                  position: relative;
+                  width: 90%;
+                  margin: auto;
+
+                  h1 {
+                    position: absolute;
+                    right: 0;
+                    display: inline-block;
+                    width: 10rem;
+                    height: 3rem;
+                    font-size: 2rem;
+                    font-weight: lighter;
+                    line-height: 3rem;
+                    color: #fff;
+                    text-align: center;
+                    background-color: $Introduce;
+                    margin-top: 1rem;
+                  }
+
+                  .introSticker {
+                    position: absolute;
+                    background: {
+                      repeat: no-repeat;
+                      size: 100%;
+                    }
+                  }
+                  .introSticker1 {
+                    top: 3rem;
+                    left: 5rem;
+                    width: 10rem;
+                    height: 10rem;
+                    background: {image: url('../img/sticker/IntroduceSticker1.png');}
+                  }
+                  .introSticker2 {
+                    top: 2rem;
+                    left: 2rem;
+                    width: 8rem;
+                    height: 14rem;
+                    background: {image: url('../img/sticker/IntroduceSticker2.png');}
+                    transform: rotate(-30deg);
+                  }
+
+                  ul {
+                    position: absolute;
+                    top: 4rem;
+                    right: 0;
+                    li {
+                      text-align: right;
+                      margin: 1rem 0;
+                      &:first-child {margin-top: 1.5rem;}
+
+                      p {
+                        font-size: 1rem;
+                        margin-right: 1rem;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+
+            &#Skills {
+              .skillPage {
+                position: relative;
+                width: 100%;
+                border: none;
+                .pageTag {a {background-image: url('../img/sticker/ListPageTag3.png');}}
+
+                h1 {
+                  width: 15rem;
+                  color: #fff;
+                  background-color: $Skills;
+                }
+                .skillsIntro {margin-top: 2rem;}
+              }
+
+              .skillList {
+                position: absolute;
+                top: 65%;
+                left: 50%;
+                transform: translate(-50%, -65%);
+                width: 100%;
+
+                .skillArea {
+                  display: flex;
+                  flex-wrap: wrap;
+                  align-items: center;
+                  width: 73%;
+                  margin: 0 auto;
+
+                  div {margin: 0.9rem 0.7rem 0;}
+                }
+
+                .skillImg {
+                  width: 6rem;
+                  height: 6rem;
+                  background: {
+                    repeat: no-repeat;
+                    size: 100%;
+                    position: center;
+                  }
+                }
+                .skillImg1 {background-image: url('../img/logo/htmlLogo.png');}
+                .skillImg2 {background-image: url('../img/logo/cssLogo.png');}
+                .skillImg3 {background-image: url('../img/logo/sassLogo.png');}
+                .skillImg4 {background-image: url('../img/logo/tailwindLogo.svg');}
+                .skillImg5 {background-image: url('../img/logo/jsLogo.png');}
+                .skillImg6 {background-image: url('../img/logo/jQueryLogo.png');}
+                .skillImg7 {background-image: url('../img/logo/reactLogo.png');}
+                .skillImg8 {background-image: url('../img/logo/FirebaseLogo.png');}
+                .skillImg9 {background-image: url('../img/logo/VueLogo.png');}
+                .skillImg10 {
+                  height: 6.1rem;
+                  background-image: url('../img/logo/FigmaLogo.png');
+                }
+                .skillImg11 {
+                  background-size: 90%;
+                  background-image: url('../img/logo/PhotoshopLogo.png');
+                }
+                .skillImg12 {
+                  background-size: 90%;
+                  background-image: url('../img/logo/IllustratorLogo.png');
+                }
+                .skillImg13 {
+                  background-size: 95%;
+                  background-image: url('../img/logo/XdLogo.png');
+                }
+
+                p {
+                  font-weight: bold;
+                  text-align: center;
+                  margin-top: 0.5rem;
+                }
+
+                .skills {
+                  width: 50%;
+                  display: flex;
+                  flex-wrap: wrap;
+                  justify-content: space-between;
+                  align-items: center;
+                  margin: 0 auto;
+                }
+              }
+            }
+
+            .work {
+              position: relative;
+              height: 95.5%;
+              margin-top: 2rem;
+              
+              .workInfo {margin-top: 0.5rem;}
+              .workImg {
+                width: 20rem;
+                height: 10rem;
+                margin: 2rem auto;
+                background: {
+                  repeat: no-repeat;
+                  size: 100%;
+                }
+                &.workImg1 {
+                  width: 15rem;
+                  height: 12.5rem;
+                  background: {image: url('../img/workImg/1.Soga.png');}
+                }
+                &.workImg2 {background: {image: url('../img/workImg/2.EAGYM.png');}}
+                &.workImg3 {background: {image: url('../img/workImg/3.resmartbig.png');}}
+                &.workImg4 {
+                  width: 15rem;  
+                  background: {image: url('../img/workImg/4.QuickCart.png');}
+                }
+                // &.workImg5 {
+                //   width: 15rem;  
+                //   background: {image: url('../img/workImg/4.QuickCart.png');}
+                // }
+                &.workImg6 {
+                  width: 12rem;  
+                  height: 13rem;
+                  background: {image: url('../img/workImg/6.KB국민은행.png');}
+                }
+              }
+
+              .workIntro {text-align: center;}
+
+              .workpage {
+                position: absolute;
+                bottom: 10%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 90%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .workBtn {
+                  position: relative;
+                  width: 9rem;
+                  height: 8rem;
+                  background: {
+                    repeat:no-repeat;
+                    size: 100%;
+                  }
+
+                  a {
+                    display: inline-block;
+                    width: 100%;
+                    height: 100%;
+
+                    p {
+                      position: absolute;
+                      top: 48%;
+                      left: 50%;
+                      transform: translate(-50%, -48%);
+                      text-align: center;
+                      font-weight: bold;
+                      color: #fff;
+                    }
+                  }
+
+                  &.workBtn1 {
+                    background-image: url('../img/sticker/Works1.png');
+                    p {color: $Works;}
+                  }
+                  &.workBtn2 {background-image: url('../img/sticker/Works2.png');}
+                  &.workBtn3 {background-image: url('../img/sticker/Works3.png');}
+                  &.workBtn4 {background-image: url('../img/sticker/Works4.png');}
+                  &.workBtn5 {background-image: url('../img/sticker/Works5.png');}
+                  &.workBtn6 {background-image: url('../img/sticker/Works6.png');}
+                }
+              }
+            }
+
+            .worksLeft {
+              h1 {
+                width: 17rem;
+                color: #fff;
+                background-color: $Works;
+              }
+            }
+
+            .worksRight {
+              .pageTag {a {background-image: url('../img/sticker/ListPageTag4.png');}}
+              padding: 3rem;
+              
+              .work {
+                height: 95.5%;
+                top: 3rem;
+              }
+
+              .swiper-button-next {
+                display: inline-block;
+                position: absolute;
+                top: 45%;
+                right: 0%;
+                transform: translateY(-40%);
+                color: $Works;
+                animation: blink-effect 1.5s infinite;
+
+                &:after {content: none;}
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include Tablet {
+    #Wrap, #M_Wrap {display: none;}
+    #T_wrap {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      @keyframes blink-effect {
+        50% {opacity: 0;}
+      }
+
+      #innerArea {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
+        height: 50rem;
+        box-shadow: 1.3rem 1.3rem 2rem $Works;
+        background: {
+          image: url('../img/MainBg.png');
+          repeat: repeat;
+        }
+
+        .pfList {
+          width: 100%;
+          height: 100%;
+          overflow: hidden;
+  
+          .T_list {
+            position: relative;
+            top: -60%;
+            width: 100%;
+            height: 60%;
+            z-index: 10;
+            transition: 1s;
+            background-color: rgba(0,0,0,0.8);
+  
+            ul {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 100%;
+  
+              li {
+                width: 70%;
+                margin: 4rem auto;
+                padding: 0.5rem 1rem;
+                border-bottom: 0.1rem solid;
+  
+                &.introduce {color: $Introduce;}
+                &.skills {color: $Skills;}
+                &.works {color: $Works;}
+                &.main {color: $mainTag;}
+  
+                a {
+                  display: flex;
+                  flex-wrap: nowrap;
+                  justify-content: space-between;
+                  align-items: center;
+  
+                  div {
+                    display: inline-block;
+                    width: 2rem;
+                    height: 2rem;
+                    background: {
+                      repeat: no-repeat;
+                      size: 100%;
+                    }
+                    &.ListPage1 {background-image: url('../img/sticker/Listpage1.png');}
+                    &.ListPage2 {background-image: url('../img/sticker/Listpage2.png');}
+                    &.ListPage3 {background-image: url('../img/sticker/Listpage3.png');}
+                    &.ListPage4 {background-image: url('../img/sticker/Listpage4.png');}
+                  }
+  
+                  p {
+                    width: 30%;
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    text-align: left;
+                  }
+                }
+              }
+            }
+          }
+          .T_listTag {
+            position: absolute;
+            top: 100%;
+            right: 5%;
+            width: 3rem;
+            height: 4rem;
+            background: {
+              repeat: no-repeat;
+              size: 100%;
+            }
+            p {
+              text-align: center;
+              font-weight: bold;
+              color: #fff;
+              margin: 1.5rem auto 0;
+            }
+  
+            &.mainTag {
+              background-image: url('../img/sticker/ListPageTag1.png');
+              p {color: $mainGreen;}
+            }
+            &.IntroTag {background-image: url('../img/sticker/ListPageTag2.png');}
+            &.SkillTag {background-image: url('../img/sticker/ListPageTag3.png');}
+            &.WorkTag {background-image: url('../img/sticker/ListPageTag4.png');}
+          }
+          .listDown {
+            top: 0%;
+            transition: 1s;
+          }
+        }
+
+        .pageInfo {
+          position: absolute;
+          top: 0%;
+          right: 0%;
+          width: 100%;
+          height: 70%;
+          word-break: keep-all;
+          word-wrap: normal;
+
+          .listInfo {
+            position: relative;
+            height: 60%;
+
+            p {
+              position: absolute;
+              top: 11%;
+              right: 28%;
+            }
+
+            .listImg {
+              position: absolute;
+              top: 3%;
+              right: 20%;
+              width: 1rem;
+              height: 5rem;
+              background: {
+                image: url('../img/sticker/down_arrow.png');
+                repeat: no-repeat;
+                size: 100%;
+                position: center;
+              }
+              animation: blink-effect 1.5s infinite;
+              transform: rotate(-88deg);
+            }
+          }
+        }
+        
+        .mainTitle {
+          width: 100%;
+          height: 100%;
+  
+          .outFrame {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 60%;
+            height: 75%;
+            border: 0.4rem solid $mainGreen;
+  
+            h2 {
+              position: absolute;
+              top: 10%;
+              left: 0%;
+              width: 100%;
+              height: 3rem;
+              font-size: 2.5rem;
+              line-height: 3rem;
+              text-align: center;
+            }
+  
+            h1 {
+              position: absolute;
+              top: 18%;
+              left: 0%;
+              width: 100%;
+              text-align: center;
+              color: $mainGreen;
+              font-size: 3rem;
+              font-weight: bold;
+              line-height: 3.1rem;
+              z-index: 99;
+            }
+  
+            .inFrame {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              width: 90%;
+              height: 90%;
+              border: 0.4rem solid $mainGreen;
+            }
+  
+            .stickerArea {
+              position: relative;
+              width: 100%;
+              height: 100%;
+  
+              .mainTitleSticker {
+                position: absolute;
+                display: inline-block;
+              }
+              .mainTitleSticker1 {
+                top: 30%;
+                right: 0%;
+                width: 15rem;
+                height: 27rem;
+                background: {
+                  image: url('../img/sticker/MainTitleSticker1.png');
+                  repeat: no-repeat;
+                  size: 100%;
+                }
+                z-index: 3;
+              }
+              .mainTitleSticker2 {
+                bottom: -1%;
+                left: -10%;
+                width: 15rem;
+                height: 35rem;
+                background: {
+                  image: url('../img/sticker/MainTitleSticker2.png');
+                  repeat: no-repeat;
+                  size: 100%;
+                }
+                transform: rotate(-20deg);
+                z-index: 1;
+              }
+              .mainTitleSticker3 {
+                top: 32%;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 13rem;
+                height: 12rem;
+                background: {
+                  image: url('../img/sticker/MainTitleSticker3.png');
+                  repeat: no-repeat;
+                  size: 100%;
+                }
+                z-index: 4;
+              }
+              .mainTitleSticker4 {
+                bottom: -5%;
+                right: 5%;
+                width: 18rem;
+                height: 9.5rem;
+                background: {
+                  image: url('../img/sticker/MainTitleSticker4.png');
+                  repeat: no-repeat;
+                  size: 100%;
+                }
+                z-index: 2;
+              }
+            }
+          }
+        }
+      }
+    }
+}
+
+  @include Mobile {
+    #Wrap, #T_wrap {display: none;}
+    background: {
+      image: url('../img/MainBg.png');
+      repeat: repeat;
+    }
+
+    @keyframes blink-effect {
+      50% {opacity: 0;}
+    }
+
+    #M_Wrap {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      .pfList {
+        width: 100%;
+        height: 100%;
+
+        .list {
+          position: relative;
+          top: -80%;
+          width: 100%;
+          height: 80%;
+          z-index: 10;
+          transition: 1s;
+          background-color: rgba(0,0,0,0.8);
+
+          ul {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+
+            li {
+              width: 90%;
+              margin: 4rem auto;
+              padding: 0.5rem 1rem;
+              border-bottom: 0.1rem solid;
+
+              &.introduce {color: $Introduce;}
+              &.skills {color: $Skills;}
+              &.works {color: $Works;}
+              &.main {color: $mainTag;}
+
+              a {
+                display: flex;
+                flex-wrap: nowrap;
+                justify-content: space-between;
+                align-items: center;
+
+                div {
+                  display: inline-block;
+                  width: 2rem;
+                  height: 2rem;
+                  background: {
+                    repeat: no-repeat;
+                    size: 100%;
+                  }
+                  &.ListPage1 {background-image: url('../img/sticker/Listpage1.png');}
+                  &.ListPage2 {background-image: url('../img/sticker/Listpage2.png');}
+                  &.ListPage3 {background-image: url('../img/sticker/Listpage3.png');}
+                  &.ListPage4 {background-image: url('../img/sticker/Listpage4.png');}
+                }
+
+                p {
+                  width: 30%;
+                  font-size: 1.5rem;
+                  font-weight: bold;
+                  text-align: left;
+                }
+              }
+            }
+          }
+        }
+        .listTag {
+          position: absolute;
+          top: 100%;
+          right: 5%;
+          width: 3rem;
+          height: 4rem;
+          background: {
+            repeat: no-repeat;
+            size: 100%;
+          }
+          p {
+            text-align: center;
+            font-weight: bold;
+            color: #fff;
+            margin: 1.5rem auto 0;
+          }
+
+          &.mainTag {
+            background-image: url('../img/sticker/ListPageTag1.png');
+            p {color: $mainGreen;}
+          }
+          &.IntroTag {background-image: url('../img/sticker/ListPageTag2.png');}
+          &.SkillTag {background-image: url('../img/sticker/ListPageTag3.png');}
+          &.WorkTag {background-image: url('../img/sticker/ListPageTag4.png');}
+        }
+        .listDown {
+          top: 0%;
+          transition: 1s;
+        }
+      }
+
+      .pageInfo {
+        position: absolute;
+        top: 0%;
+        right: 0%;
+        width: 100%;
+        height: 70%;
+        word-break: keep-all;
+        word-wrap: normal;
+
+        .scrollInfo {
+          position: relative;
+          height: 40%;
+
+          .scrollImg {
+            position: absolute;
+            top: 30%;
+            right: 20%;
+            width: 6rem;
+            height: 2.3rem;
+            background: {
+              image: url('../img/sticker/right_arrow.png');
+              repeat: no-repeat;
+              size: 100%;
+              position: center;
+            }
+            animation: blink-effect 1.5s infinite;
+            transform: rotate(-20deg);
+          }
+
+          p {
+            position: absolute;
+            bottom: 40%;
+            right: 10%;
+          }
+        }
+      }
+
+      .mainTitle {
+        width: 100%;
+        height: 100%;
+
+        .outFrame {
+          position: absolute;
+          top: 60%;
+          left: 50%;
+          transform: translate(-50%, -60%);
+          width: 80%;
+          height: 60%;
+          border: 0.4rem solid $mainGreen;
+
+          h2 {
+            position: absolute;
+            top: 10%;
+            left: 0%;
+            width: 100%;
+            height: 3rem;
+            font-size: 2rem;
+            line-height: 3rem;
+            text-align: center;
+          }
+
+          h1 {
+            position: absolute;
+            top: 18%;
+            left: 0%;
+            width: 100%;
+            text-align: center;
+            color: $mainGreen;
+            font-size: 2.5rem;
+            font-weight: bold;
+            line-height: 3.1rem;
+            z-index: 99;
+          }
+
+          .inFrame {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90%;
+            height: 92%;
+            border: 0.4rem solid $mainGreen;
+          }
+
+          .stickerArea {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            .mainTitleSticker {
+              position: absolute;
+              display: inline-block;
+            }
+            .mainTitleSticker1 {
+              top: 34%;
+              right: 0%;
+              width: 11rem;
+              height: 20rem;
+              background: {
+                image: url('../img/sticker/MainTitleSticker1.png');
+                repeat: no-repeat;
+                size: 100%;
+              }
+              z-index: 3;
+            }
+            .mainTitleSticker2 {
+              bottom: -2%;
+              left: -6%;
+              width: 10rem;
+              height: 24rem;
+              background: {
+                image: url('../img/sticker/MainTitleSticker2.png');
+                repeat: no-repeat;
+                size: 100%;
+              }
+              transform: rotate(-20deg);
+              z-index: 1;
+            }
+            .mainTitleSticker3 {
+              top: 32%;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 9rem;
+              height: 8.5rem;
+              background: {
+                image: url('../img/sticker/MainTitleSticker3.png');
+                repeat: no-repeat;
+                size: 100%;
+              }
+              z-index: 4;
+            }
+            .mainTitleSticker4 {
+              bottom: 0%;
+              right: 0%;
+              width: 13rem;
+              height: 7rem;
+              background: {
+                image: url('../img/sticker/MainTitleSticker4.png');
+                repeat: no-repeat;
+                size: 100%;
+              }
+              z-index: 2;
+            }
+          }
+        }
+      }
+    }
+}
+
+  @include Small {display: none;}
+}

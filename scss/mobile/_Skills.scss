@@ -1,0 +1,173 @@
+@import '../setting/utils';
+
+body {
+  @include Tablet {
+    .T_skills {
+      position: absolute;
+      top: 0%;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+
+      .skillWrap {
+        position: absolute;
+        top: 8%;
+        width: 100%;
+        padding: 0 2rem;
+        
+        .skillTitle {
+          background-color: $Skills;
+          padding: 0.2rem 1.5rem;
+        }
+
+        .skillIntro {text-align: center;}
+
+        .skillList {
+          width: 100%;
+          margin: 2rem auto 0 auto;
+
+          .skillArea {
+            width: 91%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            padding-bottom: 2rem;
+
+            div {
+              display: inline-block;
+              margin: 1rem 0.5rem 0;
+
+              .skillImg {
+                width: 4rem;
+                height: 4rem;
+                background: {
+                  repeat: no-repeat;
+                  size: 100%;
+                  position: center;
+                }
+              }
+              .skillImg1 {background-image: url('../img/logo/htmlLogo.png');}
+              .skillImg2 {background-image: url('../img/logo/cssLogo.png');}
+              .skillImg3 {background-image: url('../img/logo/sassLogo.png');}
+              .skillImg4 {background-image: url('../img/logo/tailwindLogo.svg');}
+              .skillImg5 {background-image: url('../img/logo/jsLogo.png');}
+              .skillImg6 {background-image: url('../img/logo/jQueryLogo.png');}
+              .skillImg7 {background-image: url('../img/logo/reactLogo.png');}
+              .skillImg8 {background-image: url('../img/logo/FirebaseLogo.png');}
+              .skillImg9 {background-image: url('../img/logo/VueLogo.png');}
+              .skillImg10 {
+                height: 3.8rem;
+                background-image: url('../img/logo/FigmaLogo.png');
+              }
+              .skillImg11 {
+                background-size: 90%;
+                background-image: url('../img/logo/PhotoshopLogo.png');
+              }
+              .skillImg12 {
+                background-size: 90%;
+                background-image: url('../img/logo/IllustratorLogo.png');
+              }
+              .skillImg13 {
+                background-size: 95%;
+                background-image: url('../img/logo/XdLogo.png');
+              }
+
+              p {
+                text-align: center;
+                margin-top: 0.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include Mobile {
+    .M_skills {
+      position: absolute;
+      top: 0%;
+      width: 100%;
+      height: 100%;
+      overflow-y: auto;
+
+      .skillWrap {
+        position: absolute;
+        top: 5%;
+        width: 100%;
+        padding: 0 1rem;
+        
+        .skillTitle {
+          background-color: $Skills;
+          padding: 0.2rem 1.5rem;
+        }
+
+        .skillIntro {text-align: center;}
+
+        .skillList {
+          width: 100%;
+          margin: 2rem auto 0 auto;
+
+          .skillArea {
+            width: 91%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+            padding-bottom: 2rem;
+
+            div {
+              display: inline-block;
+              margin: 0.3rem 0.5rem 0;
+
+              .skillImg {
+                width: 4rem;
+                height: 4rem;
+                background: {
+                  repeat: no-repeat;
+                  size: 100%;
+                  position: center;
+                }
+              }
+              .skillImg1 {background-image: url('../img/logo/htmlLogo.png');}
+              .skillImg2 {background-image: url('../img/logo/cssLogo.png');}
+              .skillImg3 {background-image: url('../img/logo/sassLogo.png');}
+              .skillImg4 {background-image: url('../img/logo/tailwindLogo.svg');}
+              .skillImg5 {background-image: url('../img/logo/jsLogo.png');}
+              .skillImg6 {background-image: url('../img/logo/jQueryLogo.png');}
+              .skillImg7 {background-image: url('../img/logo/reactLogo.png');}
+              .skillImg8 {background-image: url('../img/logo/FirebaseLogo.png');}
+              .skillImg9 {background-image: url('../img/logo/VueLogo.png');}
+              .skillImg10 {
+                height: 3.8rem;
+                background-image: url('../img/logo/FigmaLogo.png');
+              }
+              .skillImg11 {
+                background-size: 90%;
+                background-image: url('../img/logo/PhotoshopLogo.png');
+              }
+              .skillImg12 {
+                background-size: 90%;
+                background-image: url('../img/logo/IllustratorLogo.png');
+              }
+              .skillImg13 {
+                background-size: 95%;
+                background-image: url('../img/logo/XdLogo.png');
+              }
+
+              p {
+                text-align: center;
+                margin-top: 0.2rem;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @include Small {display: none;}
+}

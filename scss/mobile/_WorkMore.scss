@@ -1,0 +1,135 @@
+@import '../setting/utils';
+
+body {
+  @include Mobile {
+    .Work {
+      width: 100%;
+      height: 100%;
+
+      .WorkWrap {
+        position: absolute;
+        top: 5%;
+        width: 100%;
+        height: 100%;
+        padding: 0 1rem;
+        overflow-y: auto;
+
+        .worksTitle {
+          background-color: $Works;
+          padding: 0.2rem 1.5rem;
+        }
+  
+        .workInfo {
+          width: 100%;
+          height: 100%;
+          text-align: center;
+          margin-top: 1.5rem;
+          padding-bottom: 5rem;
+  
+          .aboutWork {
+            display: inline-block;
+            text-align: left;
+            margin-top: 0.5rem;
+          }
+  
+          .workImg {
+            width: 17rem;
+            height: 8rem;
+            background: {
+              repeat: no-repeat;
+              size: 100%;
+              position: center;
+            }
+          }
+
+          .sogaImg {
+            width: 15rem;
+            height: 12rem;
+            margin: 2rem auto;
+            background-image: url('../img/workImg/1.Soga.png');
+          }
+          .eagImg {
+            margin: 3rem auto;
+            background-image: url('../img/workImg/2.EAGYM.png');
+          }
+          .sbImg {
+            margin: 3rem auto;
+            background-image: url('../img/workImg/3.resmartbig.png');
+          }
+          .qcImg {
+            width: 16rem;
+            height: 10rem;
+            margin: 2rem auto;
+            background-image: url('../img/workImg/4.QuickCart.png');
+          }
+          .bkImg {
+            width: 16rem;
+            height: 10rem;
+            margin: 2rem auto;
+            text-align: center;
+            vertical-align: middle;
+            font-size: 2rem;
+            font-weight: bold;
+          }
+          .kbImg {
+            width: 10rem;
+            height: 10rem;
+            margin: 2rem auto;
+            background-image: url('../img/workImg/6.KB국민은행.png');
+            background-position: top;
+          }
+  
+          .moreWork {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 2rem;
+  
+            ul {text-align: left;}
+  
+            .urlBtn {
+              width: 7rem;
+              height: 7rem;
+              background: {
+                repeat: no-repeat;
+                size: 100%;
+                position: center;
+              }
+  
+              a {
+                position: relative;
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+  
+                p {
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 100%;
+                  color: #fff;
+                }
+              }
+            }
+
+            .sogaBtn {
+              background-image: url('../img/sticker/Works1.png');
+              a { p {color: $Works;} }
+            }
+            .eagBtn {background-image: url('../img/sticker/Works2.png');}
+            .sbBtn {background-image: url('../img/sticker/Works3.png')};
+            .qcBtn {background-image: url('../img/sticker/Works4.png')};
+            .bkBtn {background-image: url('../img/sticker/Works5.png');}
+            .kbBtn {background-image: url('../img/sticker/Works6.png');}
+          }
+          // .kb-more {
+          //   bottom: -24%;
+          // }
+        }
+      }
+    }
+  }
+  
+  @include Small {display: none;}
+}

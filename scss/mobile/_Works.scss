@@ -1,0 +1,245 @@
+@import '../setting/utils';
+
+body {
+  @include Tablet {
+    @keyframes blink-effect {
+      50% {opacity: 0;}
+    }
+    .swiper {
+      position: absolute;
+      top: 8%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+
+      .swiper-wrapper {
+        width: 100%;
+        height: 100%;
+
+        .swiper-slide {
+          width: 100%;
+          height: 100%;
+
+          .Work {
+            width: 100%;
+            height: 100%;
+      
+            .WorkWrap {
+              position: absolute;
+              top: 0%;
+              width: 100%;
+              height: 90%;
+              padding: 0 1rem;
+              overflow: hidden;
+      
+              .worksTitle {
+                background-color: $Works;
+                padding: 0.2rem 1.5rem;
+              }
+        
+              .workInfo {
+                width: 100%;
+                text-align: center;
+                padding-bottom: 2rem;
+
+                .aboutWork {
+                  display: inline-block;
+                  text-align: left;
+                  margin-top: 0.5rem;
+                }
+        
+                .workImg {
+                  width: 17rem;
+                  height: 8rem;
+                  background: {
+                    repeat: no-repeat;
+                    size: 100%;
+                    position: center;
+                  }
+                }
+
+                .swiper-button-next {
+                  position: absolute;
+                  top: 45%;
+                  right: 5%;
+                  display: inline-block;
+                  width: 3rem;
+                  height: 5rem;
+                  transform: translateY(-40%);
+                  color: $Works;
+                  animation: blink-effect 1.5s infinite;
+        
+                  &:after {content: none;}
+                }
+      
+                .sogaImg {
+                  width: 15rem;
+                  height: 12.5rem;
+                  margin: 2rem auto;
+                  background-image: url('../img/workImg/1.Soga.png');
+                }
+                .eagImg {
+                  margin: 3rem auto;
+                  background-image: url('../img/workImg/2.EAGYM.png');
+                }
+                .sbImg {
+                  margin: 3rem auto;
+                  background-image: url('../img/workImg/3.resmartbig.png');
+                }
+                .qcImg {
+                  width: 16rem;
+                  height: 10rem;
+                  margin: 2rem auto;
+                  background-image: url('../img/workImg/4.QuickCart.png');
+                }
+      
+                .bkImg {
+                  width: 16rem;
+                  height: 10rem;
+                  margin: 2rem auto;
+                  text-align: center;
+                  vertical-align: middle;
+                  font-size: 4rem;
+                  font-weight: bold;
+                }
+                
+                .kbImg {
+                  width: 9rem;
+                  height: 10rem;
+                  margin: 2rem auto;
+                  background-image: url('../img/workImg/6.KB국민은행.png');
+                  background-position: top;
+                }
+        
+                .moreWork {
+                  position: absolute;
+                  bottom: 7%;
+                  width: 100%;
+                  display: flex;
+                  justify-content: space-around;
+                  align-items: center;
+        
+                  ul {text-align: left;}
+        
+                  .urlBtn {
+                    width: 7rem;
+                    height: 7rem;
+                    background: {
+                      repeat: no-repeat;
+                      size: 100%;
+                      position: center;
+                    }
+        
+                    a {
+                      position: relative;
+                      display: inline-block;
+                      width: 100%;
+                      height: 100%;
+        
+                      p {
+                        position: absolute;
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                        width: 100%;
+                        color: #fff;
+                      }
+                    }
+                  }
+      
+                  .sogaBtn {
+                    background-image: url('../img/sticker/Works1.png');
+                    a { p {color: $Works;} }
+                  }
+                  .eagBtn {background-image: url('../img/sticker/Works2.png');}
+                  .sbBtn {background-image: url('../img/sticker/Works3.png')};
+                  .qcBtn {background-image: url('../img/sticker/Works4.png')};
+                  .bkBtn {background-image: url('../img/sticker/Works5.png');}
+                  .kbBtn {background-image: url('../img/sticker/Works6.png');}
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @include Mobile {
+    .M_works {
+      position: absolute;
+      top: 0%;
+      width: 100%;
+      height: 100%;
+
+      .worksWrap {
+        position: absolute;
+        top: 5%;
+        width: 100%;
+        height: 100%;
+        padding: 0 1rem;
+        overflow-y: auto;
+
+        .worksTitle {
+          background-color: $Works;
+          padding: 0.2rem 1.5rem;
+        }
+        .worksIntro {text-align: center;}
+
+        .worksList {
+          width: 100%;
+          margin: 2rem 0;
+          padding-bottom: 2rem;
+
+          .workArea {
+            width: 90%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 auto;
+
+            div {
+              margin-top: 1rem;
+              background-color: #fff;
+              &:nth-child(1), &:nth-child(2) {margin-top: 0;}
+              
+              a {
+                display: inline-block;
+                width: 100%;
+                height: 100%;
+
+                .workImg {
+                  width: 8rem;
+                  height: 8rem;
+                  box-shadow: 0px 8px 10px rgba(0,0,0,0.3);
+                  background: {
+                    repeat: no-repeat;
+                    size: 90%;
+                    position: center;
+                  }
+                }
+
+                .workImg1 {background-image: url('../img/workLogo/1_soga.png');}
+                .workImg2 {background-image: url('../img/workLogo/2_E&A.png');}
+                .workImg3 {background-image: url('../img/workLogo/3_Smartbig.png');}
+                .workImg4 {background-image: url('../img/workLogo/4_QuickCart.png');}
+                .workImg5 {background-image: url('../img/workLogo/5_Burgerking.png');}
+                .workImg6 {background-image: url('../img/workLogo/6_KB.png');}
+
+                p {
+                  font-weight: bold;
+                  text-align: center;
+                  margin-top: 0.5rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  
+  @include Small {display: none;}
+}

@@ -1,0 +1,35 @@
+/* Colors */
+$mainGreen: #2E8B57;
+$mainTag: #F3EFC8;
+$Introduce: #8097B7;
+$Skills: #607889;
+$Works: #97D3B0;
+$Highlight: #FFF600;
+
+/* media setting */
+$Desktop: 1224px;
+$Mobile: 414px;
+
+@mixin Desktop {
+  @media(min-width: ($Desktop+1)){
+    @content;
+  }
+}
+
+@mixin Tablet {
+  @media(min-width: ($Mobile+1)) and (max-width: $Desktop){
+    @content;
+  }
+}
+
+@mixin Mobile {
+  @media(min-width: 359px) and (max-width: $Mobile){
+    @content;
+  }
+}
+
+@mixin Small {
+  @media (max-width: 359px){
+    @content;
+  }
+}
