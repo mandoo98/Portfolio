@@ -346,6 +346,24 @@ a {
     background-color: #8097B7;
     border-radius: 50%;
   }
+  body #Wrap .mainSwiper .swiper-wrapper .swiper-slide#Introduce .introLeft .myData > .left:hover {
+    transform: scale(1.2);
+  }
+  body #Wrap .mainSwiper .swiper-wrapper .swiper-slide#Introduce .introLeft .myData > .left a {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  body #Wrap .mainSwiper .swiper-wrapper .swiper-slide#Introduce .introLeft .myData > .left a p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    color: #fff;
+    font-weight: bold;
+  }
   body #Wrap .mainSwiper .swiper-wrapper .swiper-slide#Introduce .introLeft .myData > .right .profile {
     text-align: right;
     font-size: 1.5rem;
@@ -1232,11 +1250,26 @@ a {
     text-align: center;
   }
   body .T_introduce .IntroSwiper .swiper-wrapper .swiper-slide.slide1 .introArea .area .areaMiddle .profileImg {
+    position: relative;
     width: 8rem;
     height: 8rem;
     background-color: #8097B7;
     border-radius: 50%;
     margin-bottom: 1rem;
+  }
+  body .T_introduce .IntroSwiper .swiper-wrapper .swiper-slide.slide1 .introArea .area .areaMiddle .profileImg a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  body .T_introduce .IntroSwiper .swiper-wrapper .swiper-slide.slide1 .introArea .area .areaMiddle .profileImg a p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
   }
   body .T_introduce .IntroSwiper .swiper-wrapper .swiper-slide.slide1 .introArea .area .areaMiddle .profileText p:first-child {
     font-size: 1.2rem;
@@ -1372,11 +1405,26 @@ a {
     text-align: center;
   }
   body .M_introduce .IntroSwiper .swiper-wrapper .swiper-slide.slide1 .introArea .area .areaMiddle .profileImg {
+    position: relative;
     width: 8rem;
     height: 8rem;
     background-color: #8097B7;
     border-radius: 50%;
     margin-bottom: 1rem;
+  }
+  body .M_introduce .IntroSwiper .swiper-wrapper .swiper-slide.slide1 .introArea .area .areaMiddle .profileImg a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  body .M_introduce .IntroSwiper .swiper-wrapper .swiper-slide.slide1 .introArea .area .areaMiddle .profileImg a p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
   }
   body .M_introduce .IntroSwiper .swiper-wrapper .swiper-slide.slide1 .introArea .area .areaMiddle .profileText p:first-child {
     font-size: 1.2rem;
@@ -1473,6 +1521,13 @@ a {
 
 /* Colors */
 /* media setting */
+@media (min-width: 1225px) {
+  body .swiper-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+}
 @media (min-width: 415px) and (max-width: 1224px) {
   body .T_skills {
     position: absolute;

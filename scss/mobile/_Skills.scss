@@ -1,6 +1,14 @@
 @import '../setting/utils';
 
 body {
+  @include Desktop {
+    .swiper-wrapper {
+      position: relative;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
   @include Tablet {
     .T_skills {
       position: absolute;
