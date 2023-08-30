@@ -597,11 +597,7 @@ a {
     background-image: url("../img/workImg/4.QuickCart.png");
   }
   body #Wrap .mainSwiper .swiper-wrapper .swiper-slide .work .workImg.workImg5 {
-    width: 15rem;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 4rem;
-    font-weight: bold;
+    background-image: url("../img/workImg/5.BK_clone.png");
   }
   body #Wrap .mainSwiper .swiper-wrapper .swiper-slide .work .workImg.workImg6 {
     width: 12rem;
@@ -1815,10 +1811,7 @@ a {
     width: 16rem;
     height: 10rem;
     margin: 2rem auto;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 4rem;
-    font-weight: bold;
+    background-image: url("../img/workImg/5.BK_clone.png");
   }
   body .swiper .swiper-wrapper .swiper-slide .Work .WorkWrap .workInfo .kbImg {
     width: 9rem;
@@ -2028,10 +2021,7 @@ a {
     width: 16rem;
     height: 10rem;
     margin: 2rem auto;
-    text-align: center;
-    vertical-align: middle;
-    font-size: 2rem;
-    font-weight: bold;
+    background-image: url("../img/workImg/5.BK_clone.png");
   }
   body .Work .WorkWrap .workInfo .kbImg {
     width: 10rem;
