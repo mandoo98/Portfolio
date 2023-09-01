@@ -1826,6 +1826,18 @@ a {
     background-image: url("../img/workImg/6.KB국민은행.png");
     background-position: top;
   }
+  body .swiper .swiper-wrapper .swiper-slide .Work .WorkWrap .workInfo .VikingImg {
+    width: 16rem;
+    height: 10rem;
+    margin: 2rem auto;
+    background-image: url("../img/workImg/7.React-Viking.png");
+  }
+  body .swiper .swiper-wrapper .swiper-slide .Work .WorkWrap .workInfo .YoutubeImg {
+    width: 16rem;
+    height: 10rem;
+    margin: 2rem auto;
+    background-image: url("../img/workImg/8.React-YoutubeClone.png");
+  }
   body .swiper .swiper-wrapper .swiper-slide .Work .WorkWrap .workInfo .moreWork {
     position: absolute;
     bottom: 7%;
@@ -1928,12 +1940,24 @@ a {
     height: 100%;
   }
   body .M_works .worksWrap .worksList .workArea div a .workImg {
+    position: relative;
     width: 8rem;
     height: 8rem;
     box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.3);
     background-repeat: no-repeat;
     background-size: 90%;
     background-position: center;
+    vertical-align: middle;
+  }
+  body .M_works .worksWrap .worksList .workArea div a .workImg p {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -40%);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
   }
   body .M_works .worksWrap .worksList .workArea div a .workImg1 {
     background-image: url("../img/workLogo/1_soga.png");
@@ -1952,6 +1976,14 @@ a {
   }
   body .M_works .worksWrap .worksList .workArea div a .workImg6 {
     background-image: url("../img/workLogo/6_KB.png");
+  }
+  body .M_works .worksWrap .worksList .workArea div a .VikingBtn {
+    background: linear-gradient(#8a2b06, #3f3f3f);
+    color: #fff;
+  }
+  body .M_works .worksWrap .worksList .workArea div a .YoutubeBtn {
+    background-color: #FF0000;
+    color: #fff;
   }
   body .M_works .worksWrap .worksList .workArea div a p {
     font-weight: bold;
@@ -2035,6 +2067,18 @@ a {
     margin: 2rem auto;
     background-image: url("../img/workImg/6.KB국민은행.png");
     background-position: top;
+  }
+  body .Work .WorkWrap .workInfo .VikingImg {
+    width: 16rem;
+    height: 10rem;
+    margin: 2rem auto;
+    background-image: url("../img/workImg/7.React-Viking.png");
+  }
+  body .Work .WorkWrap .workInfo .YoutubeImg {
+    width: 16rem;
+    height: 10rem;
+    margin: 2rem auto;
+    background-image: url("../img/workImg/8.React-YoutubeClone.png");
   }
   body .Work .WorkWrap .workInfo .moreWork {
     display: flex;

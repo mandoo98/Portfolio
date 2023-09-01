@@ -108,6 +108,20 @@ body {
                   background-image: url('../img/workImg/6.KB국민은행.png');
                   background-position: top;
                 }
+
+                .VikingImg {
+                  width: 16rem;
+                  height: 10rem;
+                  margin: 2rem auto;
+                  background-image: url('../img/workImg/7.React-Viking.png');
+                }
+
+                .YoutubeImg {
+                  width: 16rem;
+                  height: 10rem;
+                  margin: 2rem auto;
+                  background-image: url('../img/workImg/8.React-YoutubeClone.png');
+                }
         
                 .moreWork {
                   position: absolute;
@@ -208,6 +222,7 @@ body {
                 height: 100%;
 
                 .workImg {
+                  position: relative;
                   width: 8rem;
                   height: 8rem;
                   box-shadow: 0px 8px 10px rgba(0,0,0,0.3);
@@ -216,14 +231,33 @@ body {
                     size: 90%;
                     position: center;
                   }
-                }
+                  vertical-align: middle;
 
+                  p {
+                    position: absolute;
+                    top: 40%;
+                    left: 50%;
+                    transform: translate(-50%, -40%);
+                    font-size: 1.2rem;
+                    font-weight: bold;
+                    text-align: center;
+                    vertical-align: middle;
+                  }
+                }
                 .workImg1 {background-image: url('../img/workLogo/1_soga.png');}
                 .workImg2 {background-image: url('../img/workLogo/2_E&A.png');}
                 .workImg3 {background-image: url('../img/workLogo/3_Smartbig.png');}
                 .workImg4 {background-image: url('../img/workLogo/4_QuickCart.png');}
                 .workImg5 {background-image: url('../img/workLogo/5_Burgerking.png');}
                 .workImg6 {background-image: url('../img/workLogo/6_KB.png');}
+                .VikingBtn {
+                  background: linear-gradient(#8a2b06, #3f3f3f);
+                  color: #fff;
+                }
+                .YoutubeBtn {
+                  background-color: #FF0000;
+                  color: #fff;
+                }
 
                 p {
                   font-weight: bold;
