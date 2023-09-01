@@ -568,18 +568,20 @@ body {
                   height: 12.5rem;
                   background: {image: url('../img/workImg/1.Soga.png');}
                 }
-                &.workImg2 {background: {image: url('../img/workImg/2.EAGYM.png');}}
-                &.workImg3 {background: {image: url('../img/workImg/3.resmartbig.png');}}
+                &.workImg2 {background-image: url('../img/workImg/2.EAGYM.png');}
+                &.workImg3 {background-image: url('../img/workImg/3.resmartbig.png');}
                 &.workImg4 {
                   width: 15rem;  
-                  background: {image: url('../img/workImg/4.QuickCart.png');}
+                  background-image: url('../img/workImg/4.QuickCart.png');
                 }
-                &.workImg5 {background: {image: url('../img/workImg/5.BK_clone.png');}}
+                &.workImg5 {background-image: url('../img/workImg/5.BK_clone.png');}
                 &.workImg6 {
                   width: 12rem;  
                   height: 13rem;
-                  background: {image: url('../img/workImg/6.KB국민은행.png');}
+                  background-image: url('../img/workImg/6.KB국민은행.png');
                 }
+                &.workImg7 {background-image: url('../img/workImg/7.React-Viking.png');}
+                &.workImg8 {background-image: url('../img/workImg/8.React-YoutubeClone.png');}
               }
 
               .workIntro {text-align: center;}

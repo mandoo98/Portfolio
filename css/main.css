@@ -604,6 +604,12 @@ a {
     height: 13rem;
     background-image: url("../img/workImg/6.KB국민은행.png");
   }
+  body #Wrap .mainSwiper .swiper-wrapper .swiper-slide .work .workImg.workImg7 {
+    background-image: url("../img/workImg/7.React-Viking.png");
+  }
+  body #Wrap .mainSwiper .swiper-wrapper .swiper-slide .work .workImg.workImg8 {
+    background-image: url("../img/workImg/8.React-YoutubeClone.png");
+  }
   body #Wrap .mainSwiper .swiper-wrapper .swiper-slide .work .workIntro {
     text-align: center;
   }
